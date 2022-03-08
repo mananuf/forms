@@ -1,0 +1,117 @@
+/* <!-- ***************** GLOBAL SETTINGS ********************** --> */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+/* ********** all links *************** */
+a{
+    text-decoration: none;  /* no underline */
+}
+
+html, body{
+    display: grid;
+    min-height: 100%;
+    place-items: center;
+    background: #f1f1f1;
+}
+
+/* ****************** END GLOBAL ****************************  */
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+/* ********************* FORM ********************************* */
+
+/* ****** form container ******* */
+.form-container{
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 7px 12px rgba(0,0,0, 0.3);
+}
+/* ****** form title ******* */
+.form-container .form-title{
+    padding: 15px;
+    letter-spacing: 1.5px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 30px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background: linear-gradient(90deg, rgba(255,96,0,1) 0%, rgba(255,191,0,1) 100%);
+}
+/* ****** form ******* */
+.form-container form{
+    padding: 20px 30px;
+}
+/* ****** form group ******* */
+.form-container .form-group{
+    position: relative;
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+}
+/* ****** form input ******* */
+.form-container .form-group input{
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    outline: none;
+    padding-left: 15px;
+    font-size: 17px;
+}
+.form-container .form-group input:focus, 
+.form-container .form-group input:valid{
+    border-color: rgb(255,96,0);
+    /* color: rgb(255,96,0); */
+}
+/* ****** form label ******* */
+.form-container .form-group label{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5%;
+    font-size: 17px;
+    transition: all 0.3s ease;
+    pointer-events: none; /* disables pointer on label*/
+}
+
+/* ****** form input focus  [label effect] ******* */
+.form-container .form-group input:focus ~ label,
+.form-container .form-group input:valid ~ label{
+    top: 0%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    left: 5%;
+    color: rgb(255,96,0);
+    background: #fff;
+}
+
+.form-container .forgot-password{
+    margin: 10px 0;
+    display: grid;
+    place-content: center;
+}
+
+/* button container */
+.form-container .form-button{
+    margin-top: 20px;
+}
+/* *********** form button ********** */
+.form-container .form-button input{
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    border: none;
+    background: linear-gradient(90deg, rgba(255,168,0,1) 0%, rgba(255,191,0,1) 100%); 
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+/* *********** form button hover ********** */
+.form-container .form-button input:hover{
+    background: linear-gradient(90deg, rgb(226, 151, 2) 0%, rgb(226, 170, 1) 100%); 
+}

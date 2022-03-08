@@ -1,0 +1,93 @@
+/* <!-- ***************** GLOBAL SETTINGS ********************** --> */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+/* ********** all links *************** */
+a{
+    text-decoration: none;  /* no underline */
+}
+
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ****************** END GLOBAL ****************************  */
+
+/* &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&&& */
+
+/* ********************* FORM ********************************* */
+
+/* ********* form container ******** */
+.form-container{
+    background: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 30%; /*max-width should be 30% of screen*/
+    width: 100%;    /*span the entire 30% of screen*/
+}
+/* ******** form title ************ */
+.form-container h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 5px 10px;
+}
+/* ************* form groups(items)****************** */
+.form-container .form-group{
+    padding: 10px;
+}
+/* ******** form input in form group ******** */
+.form-container .form-group input{
+    padding: 10px;
+    width: 100%;
+    border-radius: 6px;
+    border:1px solid #d3d3d3;
+    font-size: 16px;
+}
+.form-container .form-group input:focus{
+    outline: 1px solid #ff6000;
+    border-left: 5px solid #ff6000;
+    font-size: 16px;
+}
+/* ******* checkbox group ********* */
+.form-container .policy{
+    display: flex;
+    padding: 2px 10px 20px 10px;
+}
+.form-container .policy p{
+    margin-left: 10px;
+    color: #757474;
+}
+
+/* ******* form button ******* */
+.form-container .form-button{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.form-container .form-button input{
+    border: none;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    background-color: #ff741e;
+    border-radius: 6px;
+    color: #fff;
+    transition: all 0.3s;
+}
+.form-container .form-button input:hover{
+    background-color: #ff6000;
+    color: #fff;
+}
+.form-container .message{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
